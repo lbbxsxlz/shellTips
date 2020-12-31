@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 startHex=0x100000
 
