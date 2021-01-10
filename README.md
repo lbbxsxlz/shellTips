@@ -18,3 +18,5 @@
 
 #### [恢复文件的修改时间](restoreFileModifyTime.sh)
 
+#### [获取路径的方式](getPath.sh)
+
