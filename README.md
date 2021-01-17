@@ -27,3 +27,5 @@
 #### [字符串换行与命令输出换行](newline.sh)
 
 #### [windows文件格式转换为unix文件格式](dos2unix.sh)
+
+#### [逐行读取文件](readline.sh)
