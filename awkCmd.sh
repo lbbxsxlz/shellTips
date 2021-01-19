@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 cat tmp.txt | grep lbbxsxlz | awk -F '.' '{print $1}'
 

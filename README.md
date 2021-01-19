@@ -23,3 +23,9 @@
 #### [目录切换命令与目录栈](dirCmd.sh)
 
 #### [shell 数学运算](math.sh)
+
+#### [字符串换行与命令输出换行](newline.sh)
+
+#### [windows文件格式转换为unix文件格式](dos2unix.sh)
+
+#### [逐行读取文件](readline.sh)
