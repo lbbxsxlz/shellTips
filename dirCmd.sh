@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 pwd
 cd /usr/bin
