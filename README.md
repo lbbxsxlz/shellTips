@@ -31,3 +31,9 @@
 #### [windows文件格式转换为unix文件格式](dos2unix.sh)
 
 #### [逐行读取文件](readline.sh)
+
+#### [小数运算](decimalCompute.sh)
+
+#### [patch的生成与使用](diffPatch.sh)
+
+#### [使用7zz解压](7zzCmd.sh)
