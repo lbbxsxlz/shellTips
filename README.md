@@ -31,3 +31,6 @@
 #### [windows文件格式转换为unix文件格式](dos2unix.sh)
 
 #### [逐行读取文件](readline.sh)
+
+#### [字符串按域分割](cutCmd.sh)
+
