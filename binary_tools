@@ -1,0 +1,33 @@
+## file
+file /bin/ls
+/bin/ls: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=9567f9a28e66f4d7ec4baf31cfbf68d0410f0ae6, stripped
+
+## ldd
+ldd /bin/ls
+        linux-vdso.so.1 (0x00007ffd8e7fc000)
+        libselinux.so.1 => /lib/x86_64-linux-gnu/libselinux.so.1 (0x00007f99dd463000)
+        libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f99dd072000)
+        libpcre.so.3 => /lib/x86_64-linux-gnu/libpcre.so.3 (0x00007f99dce00000)
+        libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f99dcbfc000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f99dd8ad000)
+        libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f99dc9dd000)
+
+## ltrace
+
+## hexdump
+hexdump /bin/ls | head
+0000000 457f 464c 0102 0001 0000 0000 0000 0000
+0000010 0003 003e 0001 0000 5850 0000 0000 0000
+0000020 0040 0000 0000 0000 03a0 0002 0000 0000
+0000030 0000 0000 0040 0038 0009 0040 001c 001b
+0000040 0006 0000 0005 0000 0040 0000 0000 0000
+0000050 0040 0000 0000 0000 0040 0000 0000 0000
+0000060 01f8 0000 0000 0000 01f8 0000 0000 0000
+0000070 0008 0000 0000 0000 0003 0000 0004 0000
+0000080 0238 0000 0000 0000 0238 0000 0000 0000
+0000090 0238 0000 0000 0000 001c 0000 0000 0000
+
+## strings
+strings /bin/ls | grep Copyright
+# Copyright (C) 1996-2017 Free Software Foundation, Inc.
+Copyright %s %d Free Software Foundation, Inc.
