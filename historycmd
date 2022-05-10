@@ -1,0 +1,11 @@
+history -c
+echo hello
+echo world
+ls -l
+
+history
+!-1
+!-2
+!!
+!?world?
+^hello^HELLO
