@@ -40,3 +40,8 @@
 
 #### [字符串按域分割](cutCmd.sh)
 
+#### [文件编码转换](iconvCmd.sh)
+
+#### [删除符合条件的文件](find_delete.sh)
+
+#### [制作initrd](mkinitrd.sh)
