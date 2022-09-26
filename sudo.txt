@@ -1,0 +1,5 @@
+# /etc/sudoers
+visudo
+
+# repair file sudoers
+pkexec visudo
