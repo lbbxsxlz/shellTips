@@ -1,5 +1,13 @@
-git push --set-upstream origin $branch_name
+git config --global user.name lbbxsxlz
+git config --global user.email lbbxsxlz@gmail.com
+ssh-keygen -t ed25519
+cat ~/.ssh/id_ed25519.pub
+
+git remote -v
 git archive --output libspdm.tar.gz main
 git archive --output mbedtls.tar.gz HEAD
+
+
+git push --set-upstream origin $branch_name
 git branch -d $branch_name
-git remote -v
+
