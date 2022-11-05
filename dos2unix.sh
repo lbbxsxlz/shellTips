@@ -11,3 +11,6 @@ diff tmpfile4 tmpfile2
 
 unix2dos-n tmpfile4 tmpfile5
 diff tmpfile4 tmpfile2
+
+find . -type f -exec dos2unix {} ;
+find . -type f -exec unix2dos {} ;
