@@ -11,3 +11,6 @@ git archive --output mbedtls.tar.gz HEAD
 git push --set-upstream origin $branch_name
 git branch -d $branch_name
 
+git checkout $branch
+git checkout $file
+git reset --hard HEAD/$commitID
