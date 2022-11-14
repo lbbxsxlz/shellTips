@@ -2,6 +2,11 @@
 file /bin/ls
 /bin/ls: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=9567f9a28e66f4d7ec4baf31cfbf68d0410f0ae6, stripped
 
+## size
+size /bin/ls
+   text    data     bss     dec     hex filename
+ 124042    4728    4832  133602   209e2 /bin/ls
+
 ## ldd
 ldd /bin/ls
         linux-vdso.so.1 (0x00007ffd8e7fc000)
@@ -12,7 +17,7 @@ ldd /bin/ls
         /lib64/ld-linux-x86-64.so.2 (0x00007f99dd8ad000)
         libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f99dc9dd000)
 
-## ltrace
+## ltrace/strace
 
 ## hexdump
 hexdump /bin/ls | head
