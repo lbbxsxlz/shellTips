@@ -7,6 +7,8 @@ git remote -v
 git archive --output libspdm.tar.gz main
 git archive --output mbedtls.tar.gz HEAD
 
+git log --oneline | wc -l
+git log --pretty='%aN' | sort -u | wc -l
 
 git push --set-upstream origin $branch_name
 git branch -d $branch_name
