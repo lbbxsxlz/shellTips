@@ -1,0 +1,4 @@
+$ git clone https://git.yoctoproject.org/poky
+$ git checkout origin/kirkstone
+
+git clone https://git.yoctoproject.org/poky -b kirkstone-4.0.5
