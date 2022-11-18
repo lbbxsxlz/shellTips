@@ -1,4 +1,20 @@
 $ git clone https://git.yoctoproject.org/poky
 $ git checkout origin/kirkstone
 
-git clone https://git.yoctoproject.org/poky -b kirkstone-4.0.5
+$git clone https://git.yoctoproject.org/poky -b kirkstone-4.0.5
+
+
+$ git clone git@example.com/meta-linux.git
+$ source ./poky/oe-init-build-env
+$ bitbake-layers add-layer ../meta-linux/
+
+$ MACHINE=meta-linux bitbake core-image-tiny -c cleanall
+$ MACHINE=meta-linux bitbake core-image-tiny
+
+$ MACHINE=meta-linux bitbake core-image-tiny -c populate_sdk
+
+$ cd tmp/deploy/sdk
+$ sh poky-glibc-x86_64-core-image-tiny-corei7-64-meta-linux-toolchain-4.0.5.sh
+
+$ . /opt/poky/4.0.5/environment-setup-corei7-64-poky-linux
+
