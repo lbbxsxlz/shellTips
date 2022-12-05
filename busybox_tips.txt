@@ -3,6 +3,8 @@ make menuconfig
 
 vim .config
 
+make defconfig/allyesconfig/allnoconfig
+
 make CROSS_COMPILE=arm-linux-
 #yocto compiler
 make CC="${CC}"
