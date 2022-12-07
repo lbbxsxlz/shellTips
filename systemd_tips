@@ -1,18 +1,48 @@
 sudo systemctl reboot
 sudo systemctl poweroff
+# Stop CPU
 sudo systemctl halt
 sudo systemctl suspend
 sudo systemctl hibernate
 sudo systemctl hybrid-sleep
+# Rescue mode
 sudo systemctl rescue
 
+# Be similar uptime
 systemd-analyze
+# Startup time of each service
 systemd-analyze blame
+# Show the flow of startup
 systemd-analyze critical-chain
 systemd-analyze critical-chain atd.service
+
 
 systemctl list-units
 systemctl list-units --all
 systemctl list-units --all --state=inactive
 systemctl list-units --failed
 systemctl list-units --type=service
+
+systemctl status
+sysystemctl status bluetooth.service
+systemctl is-active application.service
+systemctl is-failed application.service
+systemctl is-enabled application.service
+
+sudo systemctl start apache.service
+sudo systemctl stop apache.service
+sudo systemctl restart apache.service
+sudo systemctl kill apache.service
+sudo systemctl reload apache.service
+sudo systemctl daemon-reload
+# Show the arguments of Unit
+systemctl show httpd.service
+# Show the assigned argument of Unit
+systemctl show -p CPUShares httpd.service
+sudo systemctl set-property httpd.service CPUShares=500
+
+systemctl list-dependencies nginx.service
+systemctl list-dependencies --all nginx.service
+
+systemctl list-unit-files
+systemctl list-unit-files --type=service
