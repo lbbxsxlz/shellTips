@@ -46,3 +46,21 @@ systemctl list-dependencies --all nginx.service
 
 systemctl list-unit-files
 systemctl list-unit-files --type=service
+
+
+hostnamectl
+sudo hostnamectl set-hostname rhel7
+
+localectl
+sudo localectl set-locale LANG=en_GB.utf8
+sudo localectl set-keymap en_GB
+
+timedatectl
+timedatectl list-timezones  
+sudo timedatectl set-timezone America/New_York
+sudo timedatectl set-time YYYY-MM-DD
+sudo timedatectl set-time HH:MM:SS
+
+loginctl list-sessions
+loginctl list-users
+loginctl show-user ruanyf
