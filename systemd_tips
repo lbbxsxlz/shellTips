@@ -41,12 +41,20 @@ systemctl show httpd.service
 systemctl show -p CPUShares httpd.service
 sudo systemctl set-property httpd.service CPUShares=500
 
+sudo systemctl enable clamd@scan.service
+sudo ln -s '/usr/lib/systemd/system/clamd@scan.service' '/etc/systemd/system/multi-user.target.wants/clamd@scan.service'
+
+sudo systemctl disable clamd@scan.service
+
 systemctl list-dependencies nginx.service
 systemctl list-dependencies --all nginx.service
 
 systemctl list-unit-files
 systemctl list-unit-files --type=service
 
+sudo systemctl daemon-reload
+sudo systemctl restart httpd.service
+systemctl cat atd.service
 
 hostnamectl
 sudo hostnamectl set-hostname rhel7
