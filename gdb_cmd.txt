@@ -1,7 +1,13 @@
+set solib-search-path $path
+
+
 backtrace(bt)
 break(b) test.c:78     b  foo
 set args -r -a 0x239b0000    set args 6 8
 disassemble
 p/x temp
 x/4xw 0x1234ab00
+
 info threads
+thread apply all bt
+set scheduler-locking off|on|step
