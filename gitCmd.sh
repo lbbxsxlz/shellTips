@@ -21,3 +21,6 @@ git clone -b 2.3.1 https://github.com/DMTF/libspdm.git
 
 git diff > code.patch
 git apply code.patch
+
+git commit -m "commit message"
+git commit --amend
