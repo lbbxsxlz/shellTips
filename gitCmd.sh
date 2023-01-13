@@ -16,3 +16,8 @@ git branch -d $branch_name
 git checkout $branch
 git checkout $file
 git reset --hard HEAD/$commitID
+
+git clone -b 2.3.1 https://github.com/DMTF/libspdm.git
+
+git diff > code.patch
+git apply code.patch
