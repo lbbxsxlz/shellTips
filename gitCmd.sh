@@ -23,4 +23,12 @@ git diff > code.patch
 git apply code.patch
 
 git commit -m "commit message"
+
+git commit -S -s -m 'commit message'
+# update again and merge again
 git commit --amend
+git push origin $branch_name -f
+
+# using gpg key sign by default
+git config --global user.signingkey $gpg_key_id
+git config --global commit.gpgsign true
