@@ -50,7 +50,18 @@
 
 ### [shll多进程](mul-process.sh)
 
-## [gdb tips](gdb_tips.txt)
+## [更新Copyright的年份](updateCopyrightTime.sh)
+
+## [更新Rootfs的内容](updateRootfs.sh)
+
+## [busybox tips](busyboxTips.txt)
 
 ## [gpg key usage](gpg_key_tips.txt)
+
+## [gdb tips](gdb_tips.txt)
+
+## [Yocto tips](yoctoTips.txt)
+
+## [systemd tips](systemd_tips.txt)
+
 
