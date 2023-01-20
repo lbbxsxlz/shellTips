@@ -49,3 +49,8 @@
 ### [使用chroot改变根文件系统](chrootCmd.sh)
 
 ### [shll多进程](mul-process.sh)
+
+## [gdb tips](gdb_tips.txt)
+
+## [gpg key usage](gpg_key_tips.txt)
+
