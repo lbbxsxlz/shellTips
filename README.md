@@ -66,4 +66,10 @@
 
 ## [ssh 端口映射](sshCmd.sh)
 
+## [sed 的几种用法](sedCmd.sh)
+
+## [awk 的几种用法](awkCmd.sh)
+
+## [grep 的几种用法](grepCmd.sh)
+
 
