@@ -1,0 +1,5 @@
+echo $DBUS_SESSION_BUS_ADDRESS
+
+dbus-monitor
+
+sudo apt install libdbus-glib-1-dev
