@@ -3,3 +3,8 @@ echo $DBUS_SESSION_BUS_ADDRESS
 dbus-monitor
 
 sudo apt install libdbus-glib-1-dev
+
+busctrl --system
+busctrl --user
+busctrl list
+busctrl tree
