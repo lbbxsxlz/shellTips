@@ -8,3 +8,12 @@ busctl --system
 busctl --user
 busctl list
 busctl tree
+
+sudo busctl call org.freedesktop.systemd1 /org/freedesktop/systemd1 org.freedesktop.systemd1.Manager StartUnit ss "cups.service" "replace"
+
+
+# need to exec net.poettering.Calculator service
+busctl --user tree net.poettering.Calculator
+busctl --user introspect  net.poettering.Calculator /net/poettering/Calculator
+
+busctl --user call net.poettering.Calculator /net/poettering/Calculator net.poettering.Calculator Multiply xx 3 5
