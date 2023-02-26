@@ -11,8 +11,9 @@ busctl tree
 
 sudo busctl call org.freedesktop.systemd1 /org/freedesktop/systemd1 org.freedesktop.systemd1.Manager StartUnit ss "cups.service" "replace"
 
-
 # need to exec net.poettering.Calculator service, service from the [blog](http://0pointer.net/blog/the-new-sd-bus-api-of-systemd.html)
+[code is in here](https://github.com/lbbxsxlz/sd-bus-practice/blob/main/0pointer/Calculator.c)
+
 busctl --user tree net.poettering.Calculator
 busctl --user introspect  net.poettering.Calculator /net/poettering/Calculator
 
