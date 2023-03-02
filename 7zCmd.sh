@@ -9,6 +9,11 @@ file $filename
 7z l hello.ext4
 
 # extract files
+7z x inputfile -odirectory
 7z x hello.ext4
+
 # -snl store symbolic links as links
 7z -snl hello.ext4
+
+# compress
+7z a outputfile inputfile -mx=compressDegree -tcompressType
