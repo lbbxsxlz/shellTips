@@ -32,3 +32,10 @@ git push origin $branch_name -f
 # using gpg key sign by default
 git config --global user.signingkey $gpg_key_id
 git config --global commit.gpgsign true
+
+
+# fix the error 'insufficient permission for adding an object to repository database'
+# how to get groupname     groups $user
+sudo chgrp -R $groupname .
+sudo chmod -R g+rwx .
+sudo find . -type d -exec chmod g+s '{}' +
