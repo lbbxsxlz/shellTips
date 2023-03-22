@@ -72,3 +72,29 @@ sudo timedatectl set-time HH:MM:SS
 loginctl list-sessions
 loginctl list-users
 loginctl show-user ruanyf
+
+
+
+# launch a service at Startup with systemd
+ vim /etc/systemd/system/example.service
+ `
+ [Unit]
+Description=It is a example to launch a service at Startup
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/example
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+ `
+chmod 640 /etc/systemd/system/example.service
+systemctl daemon-reload
+systemctl enable example
+systemctl start example
