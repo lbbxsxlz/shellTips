@@ -76,7 +76,7 @@ loginctl show-user ruanyf
 
 
 # launch a service at Startup with systemd
- vim /etc/systemd/system/example.service
+ sudo vim /etc/systemd/system/example.service
  `
  [Unit]
 Description=It is a example to launch a service at Startup
@@ -94,7 +94,7 @@ KillMode=process
 [Install]
 WantedBy=multi-user.target
  `
-chmod 640 /etc/systemd/system/example.service
-systemctl daemon-reload
-systemctl enable example
-systemctl start example
+sudo chmod 640 /etc/systemd/system/example.service
+sudo systemctl daemon-reload
+sudo systemctl enable example
+sudo systemctl start example
