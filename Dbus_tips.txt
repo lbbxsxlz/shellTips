@@ -9,7 +9,11 @@ busctl --user
 busctl list
 busctl tree
 
+# call method
 sudo busctl call org.freedesktop.systemd1 /org/freedesktop/systemd1 org.freedesktop.systemd1.Manager StartUnit ss "cups.service" "replace"
+
+# get-property
+busctl get-property org.freedesktop.systemd1 /org/freedesktop/systemd1 org.freedesktop.systemd1.Manager DefaultLimitAS
 
 # need to exec net.poettering.Calculator service, service from the [blog](http://0pointer.net/blog/the-new-sd-bus-api-of-systemd.html)
 [code is in here](https://github.com/lbbxsxlz/sd-bus-practice/blob/main/0pointer/Calculator.c)
