@@ -73,7 +73,11 @@ loginctl list-sessions
 loginctl list-users
 loginctl show-user ruanyf
 
-
+# systemd compile
+./configure
+# fix 'Has header "sys/capability.h" : NO'
+sudo apt-get install libcap-dev
+make
 
 # launch a service at Startup with systemd
  sudo vim /etc/systemd/system/example.service
