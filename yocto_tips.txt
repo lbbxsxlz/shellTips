@@ -1,7 +1,7 @@
 $ git clone https://git.yoctoproject.org/poky
 $ git checkout origin/kirkstone
 
-$git clone https://git.yoctoproject.org/poky -b kirkstone-4.0.5
+$ git clone https://git.yoctoproject.org/poky -b kirkstone-4.0.5
 
 
 $ git clone git@example.com/meta-linux.git
@@ -16,5 +16,9 @@ $ MACHINE=meta-linux bitbake core-image-tiny -c populate_sdk
 $ cd tmp/deploy/sdk
 $ sh poky-glibc-x86_64-core-image-tiny-corei7-64-meta-linux-toolchain-4.0.5.sh
 
+# enable sdk compile environment
 $ . /opt/poky/4.0.5/environment-setup-corei7-64-poky-linux
 
+# enable wic environment
+wget https://git.yoctoproject.org/poky/snapshot/poky-kirkstone-4.0.8.tar.gz
+$ source poky/oe-init-build-env
