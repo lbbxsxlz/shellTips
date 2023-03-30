@@ -22,3 +22,9 @@ $ . /opt/poky/4.0.5/environment-setup-corei7-64-poky-linux
 # enable wic environment
 wget https://git.yoctoproject.org/poky/snapshot/poky-kirkstone-4.0.8.tar.gz
 $ source poky/oe-init-build-env
+
+wic ls example.rootfs.wic:2/usr/bin/
+
+wic rm example.rootfs.wic:2/usr/bin/bigbang
+
+wic cp ./bigbang example.rootfs.wic:2/usr/bin/
