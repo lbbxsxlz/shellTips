@@ -15,6 +15,15 @@ sudo busctl call org.freedesktop.systemd1 /org/freedesktop/systemd1 org.freedesk
 # get-property
 busctl get-property org.freedesktop.systemd1 /org/freedesktop/systemd1 org.freedesktop.systemd1.Manager DefaultLimitAS
 
+# set-property  
+# [demo code in here](https://github.com/lbbxsxlz/sd-bus-practice/blob/main/Linux_manual/add_object_vtable_example.c)
+busctl get-property org.freedesktop.systemd.VtableExample /org/freedesktop/systemd/VtableExample org.freedesktop.systemd.VtableExample AutomaticIntegerProperty
+u 666
+busctl set-property org.freedesktop.systemd.VtableExample /org/freedesktop/systemd/VtableExample org.freedesktop.systemd.VtableExample AutomaticIntegerProperty u 999
+
+busctl get-property org.freedesktop.systemd.VtableExample /org/freedesktop/systemd/VtableExample org.freedesktop.systemd.VtableExample AutomaticIntegerProperty
+u 999
+
 # need to exec net.poettering.Calculator service, service from the [blog](http://0pointer.net/blog/the-new-sd-bus-api-of-systemd.html)
 [code is in here](https://github.com/lbbxsxlz/sd-bus-practice/blob/main/0pointer/Calculator.c)
 
