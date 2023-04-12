@@ -22,3 +22,5 @@ grep -v "nologin" /etc/passwd
 
 # 匹配3位数字的行
 grep -E "[[:digit:]]{3}" /etc/passwd
+
+cat tmp | grep -E "0000.*?\*"
