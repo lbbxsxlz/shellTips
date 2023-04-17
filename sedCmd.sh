@@ -12,6 +12,10 @@ sed '/^#/d' /etc/crontab
 sed 's/[[:space:]]//g' -i tmp
 sed 's/-//g' -i tmp
 
+# remove the null line
+sed '/^\s*$/d' file
+sed '/^[  ]*$/d' file
+
 # remove '\n'
 sed ":a;N;s/\n//g;ta" -i tmp
 
