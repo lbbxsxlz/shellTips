@@ -19,5 +19,9 @@ sed '/^[  ]*$/d' file
 # remove '\n'
 sed ":a;N;s/\n//g;ta" -i tmp
 
+sed ":a;N;s/\n//g;ba" -i tmp
+sed ":a;N;s/\n//g;$!ba" -i tmp
+sed ":a;$!N;s/\n//g;ba" -i tmp
+
 sed -i 's/\x00\x00\x38\x38\x38\x38\x38\x38\x00/\x00\x00\x38\x38\x38\x38\x38\x33\x00/' ./sonia_upx_bak
 sed -i '/"Commands"/a\\      "burn dhboot.bin.img bootloader",' ./Install
