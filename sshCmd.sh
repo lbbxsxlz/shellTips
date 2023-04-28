@@ -24,5 +24,8 @@ ssh -f -N -D  localhost:9966 admin@172.31.3.129
 ssh-keygen -R 140.82.121.4
 
 # 生成rsa密钥
-ssh-keygen -t rsa
+ssh-keygen -t rsa -b 4096
 
+# copy public key
+ssh-copy-id remote_user@remote_ip
+# ssh-copy-id binbin@10.239.154.146
