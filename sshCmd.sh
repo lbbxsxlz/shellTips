@@ -29,3 +29,17 @@ ssh-keygen -t rsa -b 4096
 # copy public key
 ssh-copy-id remote_user@remote_ip
 # ssh-copy-id binbin@10.239.154.146
+
+# VS code remote develop environment
+# ssh config file
+Host ipgServer
+        HostName exampleServer.com
+        User lbbxsxlz
+        Port 22
+        ForwardAgent Yes
+
+Host binbinServer
+        HostName 101.231.114.126
+        User lbbxsxlz
+        Port 22
+        ForwardAgent Yes
