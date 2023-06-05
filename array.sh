@@ -28,7 +28,8 @@ func3()
 }
 
 
-
+echo ${#funclist[*]}
+#echo ${#funclist[@]}
 for f in ${funclist[*]}
 do
         echo $f
