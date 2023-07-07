@@ -33,6 +33,8 @@ git push origin $branch_name -f
 git config --global user.signingkey $gpg_key_id
 git config --global commit.gpgsign true
 
+# add git proxy
+git config --global http.proxy 'http://proxy.myexmple.com:8888'
 
 # fix the error 'insufficient permission for adding an object to repository database'
 # how to get groupname     groups $user
