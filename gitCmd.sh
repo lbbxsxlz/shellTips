@@ -1,6 +1,6 @@
 git config --global user.name lbbxsxlz
 git config --global user.email lbbxsxlz@gmail.com
-ssh-keygen -t ed25519
+ssh-keygen -t ed25519 -C 'lbbxsxlz@gmail.com'
 cat ~/.ssh/id_ed25519.pub
 
 git remote -v
