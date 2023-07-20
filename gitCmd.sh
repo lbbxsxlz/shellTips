@@ -33,6 +33,9 @@ git push origin $branch_name -f
 git config --global user.signingkey $gpg_key_id
 git config --global commit.gpgsign true
 
+git submodule update --init --recursive
+git submodule foreach "git checkout main"
+
 # add git proxy
 git config --global http.proxy 'http://proxy.myexmple.com:8888'
 
