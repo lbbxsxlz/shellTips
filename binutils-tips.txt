@@ -1,4 +1,6 @@
 objdump -f $elffile
 objdump -d $elffile
 objdump -D $elffile
+
+objdump -h $elffile
 objdump -s -j, --section=.data $elffile
