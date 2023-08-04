@@ -1,6 +1,17 @@
+# Display the contents of the overall file header
 objdump -f $elffile
 objdump -d $elffile
 objdump -D $elffile
 
 objdump -h $elffile
+# Only display information for section NAME
 objdump -s -j, --section=.data $elffile
+
+# Dump the contents of section <name> into <file>
+objcopy $inputfile --dump-section .text=$file
+
+# Only copy section <name> into the output
+objcopy -j --only-section .text $input $output
+
+# Add section <name> found in <file> to output
+objcopy --add-section .text=$file [$input] $output
