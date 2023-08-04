@@ -32,6 +32,8 @@ hexdump /bin/ls | head
 0000080 0238 0000 0000 0000 0238 0000 0000 0000
 0000090 0238 0000 0000 0000 001c 0000 0000 0000
 
+hexdump -C -v -n 256 $filename
+
 ## strings
 strings /bin/ls | grep Copyright
 # Copyright (C) 1996-2017 Free Software Foundation, Inc.
