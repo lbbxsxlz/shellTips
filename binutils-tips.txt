@@ -1,3 +1,12 @@
+# build binutils
+sudo apt install texinfo libgmp-dev libmpfr-dev bison -y
+wget https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.xz
+tar xvf binutils-2.41.tar.xz
+cd binutils-2.41/
+./configure --prefix=/opt/binutils-2.41/
+make -j $(nproc)
+/opt/binutils-2.41/bin/objdump --version
+
 # Display the contents of the overall file header
 objdump -f $elffile
 objdump -d $elffile
