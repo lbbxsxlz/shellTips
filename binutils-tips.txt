@@ -7,6 +7,12 @@ cd binutils-2.41/
 make -j $(nproc)
 /opt/binutils-2.41/bin/objdump --version
 
+# build binutils and gdb
+git clone https://sourceware.org/git/binutils-gdb.git
+sudo apt install flex
+./configure --prefix=/opt/binutils-gdb/
+make -j $(nproc)
+
 # Display the contents of the overall file header
 objdump -f $elffile
 objdump -d $elffile
