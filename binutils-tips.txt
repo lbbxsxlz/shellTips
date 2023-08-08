@@ -15,9 +15,17 @@ make -j $(nproc)
 
 # Display the contents of the overall file header
 objdump -f $elffile
+
+# Display the contents of all headers
+objdump -x $elffile
+
+# Display assembler contents of executable sections
 objdump -d $elffile
+
+# Display assembler contents of all sections
 objdump -D $elffile
 
+# Display the contents of the section headers
 objdump -h $elffile
 # Only display information for section NAME
 objdump -s -j, --section=.data $elffile
