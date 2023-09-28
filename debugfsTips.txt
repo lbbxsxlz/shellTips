@@ -1,2 +1,4 @@
+debugfs -V
+debugfs tmpfile -R 'pwd'
 debugfs tmpfile -R 'ls -l /bin'
 echo 'symlink /bin/sdbus-service /usr/bin/sdbus-service' | debugfs -w tmpfile
