@@ -27,6 +27,7 @@ objdump -D $elffile
 
 # Display the contents of the section headers
 objdump -h $elffile
+
 # Only display information for section NAME
 objdump -s -j, --section=.data $elffile
 

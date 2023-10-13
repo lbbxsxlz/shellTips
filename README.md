@@ -1,5 +1,25 @@
 # shellTips
 
+## Tips
+### binutils
+gnu binutils [tips](binutils-tips.txt) on how to build and some commands' usage
+
+### [busybox](busybox_tips.txt)
+
+### Dbus
+the usage of [busctl](Dbus_tips.txt)
+
+## debugfs
+the usage of [debugfs](debugfsTips.txt)
+
+## gdb
+gdb debug [tips](gdb_tips.txt)
+
+## gpg
+the [tips](gpg_key_tips.txt) of gpg keys to generate
+
+## Shell Command
+
 ### [命令行参数$*与$@的区别](argv.sh)
 
 ### [十进制 十六进制相互转化](hex2dec.sh)
