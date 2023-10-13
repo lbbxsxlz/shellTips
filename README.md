@@ -4,19 +4,28 @@
 ### binutils
 gnu binutils [tips](binutils-tips.txt) on how to build and some commands' usage
 
-### [busybox](busybox_tips.txt)
+### busybox
+this [tips](busybox_tips.txt) includes config and how to build
 
 ### Dbus
 the usage of [busctl](Dbus_tips.txt)
 
-## debugfs
+### debugfs
 the usage of [debugfs](debugfsTips.txt)
 
-## gdb
+### gdb
 gdb debug [tips](gdb_tips.txt)
 
-## gpg
+### gpg
 the [tips](gpg_key_tips.txt) of gpg keys to generate
+
+### systemd
+this [tips](systemd_tips) shows how to capture the context and dependency of the unit service
+
+and the usage of systemctl
+
+### yocto
+this [tips](yocto_tips.txt) includes how to build and update yocto image
 
 ## Shell Command
 
@@ -79,15 +88,6 @@ the [tips](gpg_key_tips.txt) of gpg keys to generate
 ### [gpg key usage](gpg_key_tips.txt)
 
 ### [gdb tips](gdb_tips.txt)
-
-### [Yocto tips](yoctoTips.txt)
-Yocto 编译环境部署与WIC Image更新
-
-### [systemd tips](systemd_tips.txt)
-Systemd的Unit Service介绍与变更
-
-### [Dbus相关命令介绍](Dbus_tips.txt)
-重点介绍busctl的使用
 
 ### [ssh 端口映射](sshCmd.sh)
 
