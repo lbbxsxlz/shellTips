@@ -83,12 +83,6 @@ this [tips](yocto_tips.txt) includes how to build and update yocto image
 
 ## [更新Rootfs的内容](updateRootfs.sh)
 
-### [busybox tips](busyboxTips.txt)
-
-### [gpg key usage](gpg_key_tips.txt)
-
-### [gdb tips](gdb_tips.txt)
-
 ### [ssh 端口映射](sshCmd.sh)
 
 ### [sed 的几种用法](sedCmd.sh)
