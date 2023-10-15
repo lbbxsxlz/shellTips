@@ -28,8 +28,23 @@ and the usage of systemctl
 this [tips](yocto_tips.txt) includes how to build and update yocto image
 
 ## Shell Command
+### 7z
+the usage of [7z](7zCmd.sh)
 
-### [命令行参数$*与$@的区别](argv.sh)
+    i shows the format supported
+    l list the files in package
+    x extract files
+
+### argv
+the usage of [arguments](argv.sh) of shell script
+
+shows the difference between \$\* and \$\@
+
+### array
+shows the usage of [array](array.sh)
+
+### awk
+shows the usage of [awk](awkCmd.sh)
 
 ### [十进制 十六进制相互转化](hex2dec.sh)
 
@@ -65,8 +80,6 @@ this [tips](yocto_tips.txt) includes how to build and update yocto image
 
 ### [patch的生成与使用](diffPatch.sh)
 
-### [使用7z解压ext](7zCmd.sh)
-
 ### [字符串按域分割](cutCmd.sh)
 
 ### [文件编码转换](iconvCmd.sh)
@@ -87,8 +100,4 @@ this [tips](yocto_tips.txt) includes how to build and update yocto image
 
 ### [sed 的几种用法](sedCmd.sh)
 
-### [awk 的几种用法](awkCmd.sh)
-
 ### [grep 的几种用法](grepCmd.sh)
-
-
