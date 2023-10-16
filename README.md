@@ -46,6 +46,15 @@ shows the usage of [array](array.sh)
 ### awk
 shows the usage of [awk](awkCmd.sh)
 
+### backtrace
+[backtrace](backtrace.sh) script is ueed to capture kernel log
+
+### check sdcard
+[sdcard](checkSD.sh) script is used to test write file to sdcard
+
+### chroot
+
+
 ### [十进制 十六进制相互转化](hex2dec.sh)
 
 ### [使用shell命令生成二进制文件](trCmd.sh)
