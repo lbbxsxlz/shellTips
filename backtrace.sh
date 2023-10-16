@@ -2,6 +2,8 @@
 # Author : lbbxsxlz <lbbxsxlz@gmail.com>
 # Description: kernel dmesg capture
 
+task=$1
+
 keepFileSize()
 {
 	if [ -f /mnt/backup/backtrace_bak ]; then
@@ -24,7 +26,7 @@ keepFileSize()
 			fi
 		fi
 	fi
-	
+
 	if [ -f /mnt/mtd/backtrace_bak ]; then
 		#size=`ls -l /mnt/mtd/backtrace_bak | awk '{print $3}'`
 		size=`ls -l /mnt/mtd/backtrace_bak | awk '{print $5}'`
@@ -36,7 +38,7 @@ keepFileSize()
 			echo "----------2222222222  $(date) file truncation  1572864 bytes 2222222222----------" >> /mnt/mtd/backtrace_bak
 		fi
 	fi
-		
+
 	#size=`ls -l /mnt/mtd/backtrace | awk '{print $3}'`
 	size=`ls -l /mnt/mtd/backtrace | awk '{print $5}'`
 	#大于 100K
@@ -61,7 +63,7 @@ dmesg -c >> /mnt/mtd/backtrace
 sync
 date >> /mnt/mtd/backtrace
 cat /proc/uptime >> /mnt/mtd/backtrace
-ps | grep sonia | grep -v 'grep' >> /mnt/mtd/backtrace
+ps | grep $task | grep -v 'grep' >> /mnt/mtd/backtrace
 echo "--------------- $(date)------------------" >> /mnt/mtd/backtrace
 keepFileSize
 while true
