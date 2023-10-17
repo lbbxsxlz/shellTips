@@ -47,25 +47,40 @@ shows the usage of [array](array.sh)
 shows the usage of [awk](awkCmd.sh)
 
 ### backtrace
-[backtrace](backtrace.sh) script is ueed to capture kernel log
+[backtrace](backtrace.sh) script is used to capture kernel log
 
 ### check sdcard
 [sdcard](checkSD.sh) script is used to test write file to sdcard
 
 ### chroot
+shows the usage of [chroot](chrootCmd.sh)
 
+### command
+test the [command](cmd.sh) is existed
+
+### color
+add the [color](color.sh) on output of shell command
+
+### cut
+shows the usgae of [cut](cutCmd.sh)
+
+### date
+shows the usage of [date](dateCmd.sh)
+
+### dd
+shows the demos of [dd](ddCmd.sh) command
+
+### decimal computing
+shows the demo of [decimal](decimalCompute.sh) computing
+
+### diff and patch
+shows how to create and apply [patch](diffPatch.sh)
 
 ### [十进制 十六进制相互转化](hex2dec.sh)
 
 ### [使用shell命令生成二进制文件](trCmd.sh)
 
 ### [使用trap命令跟踪命令执行或函数返回值](trapCmd.sh)
-
-### [给脚本输出添加颜色，表示成功、警告、错误](color.sh)
-
-### [测试命令是否存在](cmd.sh)
-
-### [使用dd命令构造文件](ddCmd.sh)
 
 ### [删除文本中的指定字符串所在行或添加一行内容](sedCmd.sh)
 
@@ -84,8 +99,6 @@ shows the usage of [awk](awkCmd.sh)
 ### [windows文件格式转换为unix文件格式](dos2unix.sh)
 
 ### [逐行读取文件](readline.sh)
-
-### [小数运算](decimalCompute.sh)
 
 ### [patch的生成与使用](diffPatch.sh)
 
