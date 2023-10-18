@@ -76,6 +76,9 @@ shows the demo of [decimal](decimalCompute.sh) computing
 ### diff and patch
 shows how to create and apply [patch](diffPatch.sh)
 
+### dir/dirs
+shows the demos on how to use [dir/dirs](dirCmd.sh) command
+
 ### [十进制 十六进制相互转化](hex2dec.sh)
 
 ### [使用shell命令生成二进制文件](trCmd.sh)
@@ -89,8 +92,6 @@ shows how to create and apply [patch](diffPatch.sh)
 ### [恢复文件的修改时间](restoreFileModifyTime.sh)
 
 ### [获取路径的方式](getPath.sh)
-
-### [目录切换命令与目录栈](dirCmd.sh)
 
 ### [shell 数学运算](math.sh)
 

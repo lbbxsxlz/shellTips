@@ -1,7 +1,10 @@
 #!/bin/bash
 
 pwd
+dir --color
 cd /usr/bin
+dir -l
+dir -sr
 cd -
 pwd
 
