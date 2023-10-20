@@ -79,6 +79,27 @@ shows how to create and apply [patch](diffPatch.sh)
 ### dir/dirs
 shows the demos on how to use [dir/dirs](dirCmd.sh) command
 
+dir command is similar to ls
+
+dirs is the directory stack
+
+### dmidecode
+shows the usage of [dmidecode](dmidecodeCmd.sh)
+
+### dos2unix/unix2dos
+shows the usage of [dos2unix/unix2dos](dos2unix.sh)
+
+### find
+shows the demos of [find](finCmd.sh) command
+
+[find and delete](find_delete.sh) the matched file
+
+### fiewall/iptable
+shows the demo of [iptable](firewall-for-syn-flood.sh)
+
+### func
+shows the demo of shell [function](func.sh)
+
 ### [十进制 十六进制相互转化](hex2dec.sh)
 
 ### [使用shell命令生成二进制文件](trCmd.sh)
@@ -97,8 +118,6 @@ shows the demos on how to use [dir/dirs](dirCmd.sh) command
 
 ### [字符串换行与命令输出换行](newline.sh)
 
-### [windows文件格式转换为unix文件格式](dos2unix.sh)
-
 ### [逐行读取文件](readline.sh)
 
 ### [patch的生成与使用](diffPatch.sh)
@@ -110,8 +129,6 @@ shows the demos on how to use [dir/dirs](dirCmd.sh) command
 ### [删除符合条件的文件](find_delete.sh)
 
 ### [制作initrd](mkinitrd.sh)
-
-### [使用chroot改变根文件系统](chrootCmd.sh)
 
 ### [shll多进程](mul-process.sh)
 
