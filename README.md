@@ -100,6 +100,24 @@ shows the demo of [iptable](firewall-for-syn-flood.sh)
 ### func
 shows the demo of shell [function](func.sh)
 
+## get path
+shows the method to [get](getPath.sh) the path
+
+## git account switch
+shows the demos of [git](gitAccountSwitch.sh) cofig command
+
+## git command
+shows the demos of [git](gitCmd.sh) command
+
+## grep
+shows the usage of [grep](grepCmd.sh)
+
+## hex switch to dec
+shows the usage of the swtich from hex to dec
+
+## history
+shows the usage of [history](historycmd) command
+
 ### [十进制 十六进制相互转化](hex2dec.sh)
 
 ### [使用shell命令生成二进制文件](trCmd.sh)
@@ -139,5 +157,3 @@ shows the demo of shell [function](func.sh)
 ### [ssh 端口映射](sshCmd.sh)
 
 ### [sed 的几种用法](sedCmd.sh)
-
-### [grep 的几种用法](grepCmd.sh)
