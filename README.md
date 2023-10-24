@@ -100,25 +100,38 @@ shows the demo of [iptable](firewall-for-syn-flood.sh)
 ### func
 shows the demo of shell [function](func.sh)
 
-## get path
+### get path
 shows the method to [get](getPath.sh) the path
 
-## git account switch
+### git account switch
 shows the demos of [git](gitAccountSwitch.sh) cofig command
 
-## git command
+### git command
 shows the demos of [git](gitCmd.sh) command
 
-## grep
+### grep
 shows the usage of [grep](grepCmd.sh)
 
-## hex switch to dec
+### hex switch to dec
 shows the usage of the swtich from hex to dec
 
-## history
+### history
 shows the usage of [history](historycmd) command
 
-### [十进制 十六进制相互转化](hex2dec.sh)
+### iconv
+shows the usage of [iconv](iconvCmd.sh)
+
+### losetup
+shows the demo of [losetup](losetupCmd.sh)
+
+### math
+shows the [math](math.sh) calculation
+
+### mkinitrd
+shows how to make [initrd](mkinitrd.sh) image
+
+### mount
+shows the usage of [mount](mountCmd.sh) command
 
 ### [使用shell命令生成二进制文件](trCmd.sh)
 
