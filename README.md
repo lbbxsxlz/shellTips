@@ -128,40 +128,33 @@ shows the demo of [losetup](losetupCmd.sh)
 shows the [math](math.sh) calculation
 
 ### mkinitrd
-shows how to make [initrd](mkinitrd.sh) image
+shows how to [make initrd](mkinitrd.sh) image
 
 ### mount
 shows the usage of [mount](mountCmd.sh) command
 
-### [使用shell命令生成二进制文件](trCmd.sh)
+### multi process
+shows the demo of [multi process](mul-process.sh) in shell script
+
+### new line
+shows the method to create [new line](newline.sh)
+
+### read line
+shows the method to [read line](readline.sh) from file
+
+### restore file's modify time
+shows the method to [restore the file's modify time](restoreFileModifyTime.sh)
+
+### sed
+shows the demos of [sed](sedCmd.sh) command
 
 ### [使用trap命令跟踪命令执行或函数返回值](trapCmd.sh)
 
 ### [删除文本中的指定字符串所在行或添加一行内容](sedCmd.sh)
 
-### [查找特殊字符串中的特殊字符](awkCmd.sh)
-
 ### [恢复文件的修改时间](restoreFileModifyTime.sh)
 
-### [获取路径的方式](getPath.sh)
-
-### [shell 数学运算](math.sh)
-
-### [字符串换行与命令输出换行](newline.sh)
-
 ### [逐行读取文件](readline.sh)
-
-### [patch的生成与使用](diffPatch.sh)
-
-### [字符串按域分割](cutCmd.sh)
-
-### [文件编码转换](iconvCmd.sh)
-
-### [删除符合条件的文件](find_delete.sh)
-
-### [制作initrd](mkinitrd.sh)
-
-### [shll多进程](mul-process.sh)
 
 ## [更新Copyright的年份](updateCopyrightTime.sh)
 
