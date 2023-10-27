@@ -148,18 +148,22 @@ shows the method to [restore the file's modify time](restoreFileModifyTime.sh)
 ### sed
 shows the demos of [sed](sedCmd.sh) command
 
+### sort
+shows the usage of [sort](sortCmd.sh) command
+
+### source
+shows the usage of [source](sourceCmd.sh) command
+
+### ssh
+shows the demos of [ssh](sshCmd.sh) command
+
+especially ssh port map and tunnel
+
+### string to binary
+shows the demo to convert [string to binary](smbios_string_to_hex.sh)
+
 ### [使用trap命令跟踪命令执行或函数返回值](trapCmd.sh)
-
-### [删除文本中的指定字符串所在行或添加一行内容](sedCmd.sh)
-
-### [恢复文件的修改时间](restoreFileModifyTime.sh)
-
-### [逐行读取文件](readline.sh)
 
 ## [更新Copyright的年份](updateCopyrightTime.sh)
 
 ## [更新Rootfs的内容](updateRootfs.sh)
-
-### [ssh 端口映射](sshCmd.sh)
-
-### [sed 的几种用法](sedCmd.sh)
