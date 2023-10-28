@@ -162,8 +162,17 @@ especially ssh port map and tunnel
 ### string to binary
 shows the demo to convert [string to binary](smbios_string_to_hex.sh)
 
-### [使用trap命令跟踪命令执行或函数返回值](trapCmd.sh)
+### trap
+shows the ueage of [trap](trapCmd.sh) command
 
-## [更新Copyright的年份](updateCopyrightTime.sh)
+### tr
+shows the usage of [tr](trCmd.sh) command
 
-## [更新Rootfs的内容](updateRootfs.sh)
+### uniq
+shows the demo of [uniq](uniqCmd.sh) command
+
+### update copyright time
+this script is used to [update copyright time](updateCopyrightTime.sh)
+
+### update rootfs
+this script is used to [update rootfs](updateRootfs.sh)
