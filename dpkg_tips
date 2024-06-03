@@ -1,0 +1,12 @@
+dpkg -i $package
+
+dpkg -r $package
+
+sudo dpkg --print-architecture
+
+sudo dpkg --print-foreign-architectures
+
+sudo dpkg --add-architecture riscv64
+
+sudo dpkg --remove-architecture riscv64
+
