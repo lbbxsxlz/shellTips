@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+
+puts $env(bmcIP)
+puts $env(ssh_cmd)
+
+set password 0penBmc
+spawn ssh root@$env(bmcIP) $env(ssh_cmd)
+expect -re "(.*)assword:"
+send -- "$password\r"
+send -- "\r"
+interact
